@@ -9,12 +9,13 @@ for (let i = 0; i < word.length; i++) {
      count += 1;
    }
 }
-function checkPalindrome(word) {    
-   var l = word.length;
-   for (var i = 0; i < l / 2; i++) {
-       if (word.charAt(i) !== word.charAt(l - 1 - i)) {
-           return "not a palindrome";
-       }
+function checkPalindrome(word) {  
+   wordLow = word.toLowerCase();  
+   let l = wordLow.length;
+   for (let i = 0; i < l / 2; i++) {
+      if (wordLow.charAt(i) !== wordLow.charAt(l - 1 - i)) {
+         return "not a palindrome";
+      }
    }
    return "a palindrome";
 }
