@@ -1,5 +1,6 @@
 /* Homework 4
    Exercise 6 JavaScript code
+   -- Strings and Functions
 */
 word = prompt("Please enter a word:");
 count = 0;
